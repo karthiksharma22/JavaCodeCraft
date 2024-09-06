@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaCodeCraft</title>
+<link rel="stylesheet" href="./question.css">
+<link rel="icon" href="https://png.pngtree.com/png-clipart/20210523/original/pngtree-letter-j-logo-png-png-image_6317441.jpg">
+</head>
+<body>
+		<script>
+         let fun = ()=>{
+        	 let name = localStorage.getItem("name");
+             let id = document.getElementById("hidden");
+             id.value=name;    
+         }
+         
+      </script>
+      <div class="left">
+      <h1>4. Regular Expression Matching</h1>
+      
+      <div class="tags">
+      <p><i class="fa-solid fa-code" style="color:dodgerblue;"></i>  Hard</p>
+      <p>Dynamic Programming</p>
+      <p>Recursion</p>
+      <p>String</p>
+      </div>
+      
+      <p>Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where: <br>
+		'.' is a single character <br>
+		'*' Matches zero or more of the preceding element
+	The matching should cover the entire input string (not partial).
+ 	</p>
+ 	  <h2><i class="fa-solid fa-lightbulb" style="color:orange;"></i>  Test Cases </h2>
+ 	  
+ 	  <p> <b>Example 1: </b> <br>
+	<b>Input:</b>  s = "aa", p = "a" <br>
+	<b>Output:</b> false <br>
+	<b>Explanation:</b> "a" does not match the entire string "aa".<br></p>
+	
+	<p> <b>Example 2: </b> <br>
+	<b>Input:</b>  s = "aa", p = "a*"<br>
+	<b>Output:</b> true <br>
+	<b>Explanation:</b> '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".<br></p>
+	</p>
+	
+	<p> <b>Example 3: </b> <br>
+	<b>Input:</b>  s = "ab", p = ".*"<br>
+	<b>Output:</b> true <br>
+	<b>Explanation:</b> ".*" means "zero or more (*) of any character (.)".<br></p>
+	</p>
+	
+	<h2><i class="fa-solid fa-lock-open" style="color:orange;"></i>  Constraints </h2>
+	   <p>
+	     1 <= s.length <= 20   <br>
+		1 <= p.length <= 20      <br>
+		-109 <= target <= 109       <br>
+		<b>It is guaranteed for each appearance of the character '*', there will be a previous valid character to match.</b>   <br>
+		</p>
+		
+      </div>
+      
+      
+      <div class="right">
+      <div data-pym-src="https://www.jdoodle.com/embed/v1/b818a34c10c28223" style="overflow:hidden;"></div>
+        <form action="addquestion.jsp" method="post" onSubmit="fun()">
+        <input type="hidden" name="username" value="" id="hidden">
+        <input type="hidden" name="difficulty" value="hard">
+        I have Completed this Question
+        <input type="submit" value="&#10004;" class="submit">
+        </form>
+      </div>
+      <script src="https://kit.fontawesome.com/1ffc3d44d6.js" crossorigin="anonymous"></script>
+      <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"> </script>
+</body>
+</html>

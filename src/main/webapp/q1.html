@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaCodeCraft</title>
+<link rel="stylesheet" href="./question.css">
+<link rel="icon" href="https://png.pngtree.com/png-clipart/20210523/original/pngtree-letter-j-logo-png-png-image_6317441.jpg">
+</head>
+<body>
+		<script>
+         let fun = ()=>{
+        	 let name = localStorage.getItem("name");
+             let id = document.getElementById("hidden");
+             id.value=name;    
+         }
+         
+      </script>
+      <div class="left">
+      <h1>1. 2 Sum</h1>
+      
+      <div class="tags">
+      <p><i class="fa-solid fa-code" style="color:dodgerblue;"></i>  Easy</p>
+      <p>Array</p>
+      <p>Hash Table</p>
+      </div>
+      
+      <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+	You may assume that each input would have exactly one solution, and you may not use the same element twice.
+	You can return the answer in any order.
+ 	</p>
+ 	  <h2><i class="fa-solid fa-lightbulb" style="color:orange;"></i>  Test Cases </h2>
+ 	  
+ 	  <p> <b>Example 1: </b> <br>
+	<b>Input:</b>  nums = [2,7,11,15], target = 9 <br>
+	<b>Output:</b> [0,1] <br>
+	<b>Explanation:</b> Because nums[0] + nums[1] == 9, we return [0, 1].<br></p>
+	
+	<p> <b>Example 2: </b> <br>
+	<b>Input:</b>  nums = [3,2,4], target = 6<br>
+	<b>Output:</b> [1,2] <br>
+	</p>
+	
+	<p> <b>Example 3: </b> <br>
+	<b>Input:</b>  nums = [3,3], target = 6<br>
+	<b>Output:</b> [0,1] <br>
+	</p>
+	
+	<h2><i class="fa-solid fa-lock-open" style="color:orange;"></i>  Constraints </h2>
+	   <p>
+	     2 <= nums.length <= 104   <br>
+		-109 <= nums[i] <= 109      <br>
+		-109 <= target <= 109       <br>
+		<b>Only one valid answer exists.</b>   <br>
+		</p>
+		
+      </div>
+      
+      
+      <div class="right">
+      <div data-pym-src="https://www.jdoodle.com/embed/v1/b818a34c10c28223" style="overflow:hidden;"></div>
+        <form action="addquestion.jsp" method="post" onSubmit="fun()">
+        <input type="hidden" name="username" value="" id="hidden">
+        <input type="hidden" name="difficulty" value="easy">
+        I have Completed this Question
+        <input type="submit" value="&#10004;" class="submit">
+        </form>
+      </div>
+      <script src="https://kit.fontawesome.com/1ffc3d44d6.js" crossorigin="anonymous"></script>
+      <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"> </script>
+</body>
+</html>

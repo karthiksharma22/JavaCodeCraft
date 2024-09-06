@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaCodeCraft</title>
+<link rel="stylesheet" href="./question.css">
+<link rel="icon" href="https://png.pngtree.com/png-clipart/20210523/original/pngtree-letter-j-logo-png-png-image_6317441.jpg">
+</head>
+<body>
+<script>
+         let fun = ()=>{
+        	 let name = localStorage.getItem("name");
+             let id = document.getElementById("hidden");
+             id.value=name;    
+         }
+         
+      </script>
+      <div class="left">
+      <h1>7. Merge k Sorted Lists</h1>
+      
+      <div class="tags">
+      <p><i class="fa-solid fa-code" style="color:dodgerblue;"></i>  Hard</p>
+      <p>Merge Sort</p>
+      <p>Heap</p>
+      <p>Divide and Conquer</p>
+      <p>Linked List</p>
+      </div>
+      
+      <p>You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+	Merge all the linked-lists into one sorted linked-list and return it.
+ 	</p>
+ 	  <h2><i class="fa-solid fa-lightbulb" style="color:orange;"></i>  Test Cases </h2>
+ 	  
+ 	  <p> <b>Example 1: </b> <br>
+	<b>Input:</b>  lists = [[1,4,5],[1,3,4],[2,6]] <br>
+	<b>Output:</b> [1,1,2,3,4,4,5,6] <br>
+	<b>Explanation:</b> The linked-lists are: <br>
+[  <br>
+  1->4->5,   <br>
+  1->3->4,   <br>
+  2->6   <br>
+]  <br>
+merging them into one sorted list:  <br>
+1->1->2->3->4->4->5->6.<br></p>
+	
+	<p> <b>Example 2: </b> <br>
+	<b>Input:</b>  lists = []<br>
+	<b>Output:</b> [] <br>
+	</p>
+	
+	<p> <b>Example 3: </b> <br>
+	<b>Input:</b>  lists = [[]]<br>
+	<b>Output:</b> [] <br>
+	</p>
+	
+	<h2><i class="fa-solid fa-lock-open" style="color:orange;"></i>  Constraints </h2>
+	   <p>
+	     k == lists.length   <br>
+		0 <= k <= 104      <br>
+		0 <= lists[i].length <= 500      <br>
+		-104 <= lists[i][j] <= 104 <br>
+		<b>The sum of lists[i].length will not exceed 104.</b>   <br>
+		</p>
+		
+      </div>
+      
+      
+      <div class="right">
+      <div data-pym-src="https://www.jdoodle.com/embed/v1/b818a34c10c28223" style="overflow:hidden;"></div>
+        <form action="addquestion.jsp" method="post" onSubmit="fun()">
+        <input type="hidden" name="username" value="" id="hidden">
+        <input type="hidden" name="difficulty" value="hard">
+        I have Completed this Question
+        <input type="submit" value="&#10004;" class="submit">
+        </form>
+      </div>
+      <script src="https://kit.fontawesome.com/1ffc3d44d6.js" crossorigin="anonymous"></script>
+      <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"> </script>
+</body>
+</html>
